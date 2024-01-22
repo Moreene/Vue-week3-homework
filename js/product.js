@@ -91,7 +91,9 @@ const app = Vue.createApp({
         },
         // 取消新增產品時，清空輸入框
         clearInput() {
-            this.newProduct = {};
+            this.tempProduct = {
+                imagesUrl: []
+            }
         },
     },
     mounted() {
